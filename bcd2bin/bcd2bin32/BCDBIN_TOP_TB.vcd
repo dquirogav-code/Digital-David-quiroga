@@ -1,0 +1,588 @@
+$date
+	Thu Jul  9 20:06:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module BCDBIN_TOP_TB $end
+$var wire 1 ! done $end
+$var wire 32 " B [31:0] $end
+$var real 1 # DUTY_CYCLE $end
+$var parameter 32 $ PERIOD $end
+$var reg 32 % bcdin [31:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' init $end
+$var reg 1 ( rst $end
+$scope module uut $end
+$var wire 32 ) bcdin [31:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' init $end
+$var wire 1 ( rst $end
+$var wire 32 * s [31:0] $end
+$var wire 1 + load_i $end
+$var wire 1 , load_h $end
+$var wire 1 - load_B $end
+$var wire 5 . i_temp [4:0] $end
+$var wire 5 / i [4:0] $end
+$var wire 6 0 h_temp [5:0] $end
+$var wire 6 1 h [5:0] $end
+$var wire 1 ! done $end
+$var wire 32 2 dig_c [31:0] $end
+$var wire 4 3 dig [3:0] $end
+$var wire 32 4 bcd [31:0] $end
+$var wire 1 5 DONE $end
+$var wire 32 6 B_temp [31:0] $end
+$var wire 32 7 B [31:0] $end
+$scope module CMP $end
+$var wire 5 8 i [4:0] $end
+$var wire 1 5 DONE $end
+$upscope $end
+$scope module CONT $end
+$var wire 5 9 i_temp [4:0] $end
+$var wire 5 : i [4:0] $end
+$var wire 6 ; h_temp [5:0] $end
+$var wire 6 < h [5:0] $end
+$upscope $end
+$scope module CTRL $end
+$var wire 1 5 DONE $end
+$var wire 1 & clk $end
+$var wire 1 ' init $end
+$var wire 1 ( rst $end
+$var parameter 3 = S_CHARGE $end
+$var parameter 3 > S_CHK_I $end
+$var parameter 3 ? S_DONE $end
+$var parameter 3 @ S_INIT $end
+$var parameter 3 A S_LOAD $end
+$var parameter 3 B S_PROCESS $end
+$var reg 1 ! done $end
+$var reg 1 - load_B $end
+$var reg 1 , load_h $end
+$var reg 1 + load_i $end
+$var reg 3 C next_state [2:0] $end
+$var reg 3 D state [2:0] $end
+$upscope $end
+$scope module DB $end
+$var wire 32 E s [31:0] $end
+$var wire 32 F dig_c [31:0] $end
+$var wire 32 G B_temp [31:0] $end
+$upscope $end
+$scope module DD $end
+$var wire 6 H h [5:0] $end
+$var wire 4 I dig [3:0] $end
+$var wire 32 J bcd [31:0] $end
+$upscope $end
+$scope module DDC $end
+$var wire 4 K dig [3:0] $end
+$var wire 32 L dig_c [31:0] $end
+$upscope $end
+$scope module DS $end
+$var wire 32 M s [31:0] $end
+$var wire 32 N B [31:0] $end
+$upscope $end
+$scope module RB $end
+$var wire 32 O B_temp [31:0] $end
+$var wire 32 P bcdin [31:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' init $end
+$var wire 1 - load_B $end
+$var wire 1 ( rst $end
+$var reg 32 Q B [31:0] $end
+$var reg 32 R bcd [31:0] $end
+$upscope $end
+$scope module RH $end
+$var wire 1 & clk $end
+$var wire 6 S h_temp [5:0] $end
+$var wire 1 ' init $end
+$var wire 1 , load_h $end
+$var wire 1 ( rst $end
+$var reg 6 T h [5:0] $end
+$upscope $end
+$scope module RI $end
+$var wire 1 & clk $end
+$var wire 5 U i_temp [4:0] $end
+$var wire 1 ' init $end
+$var wire 1 + load_i $end
+$var wire 1 ( rst $end
+$var reg 5 V i [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 B
+b1 A
+b0 @
+b101 ?
+b10 >
+b100 =
+b10100 $
+r0.5 #
+$end
+#0
+$dumpvars
+b0 V
+b11111 U
+b0 T
+b111100 S
+b0 R
+b0 Q
+b100101 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 <
+b111100 ;
+b0 :
+b11111 9
+b0 8
+b0 7
+b0 6
+15
+b0 4
+b0 3
+b0 2
+b0 1
+b111100 0
+b0 /
+b11111 .
+0-
+0,
+0+
+b0 *
+b100101 )
+1(
+0'
+0&
+b100101 %
+b0 "
+0!
+$end
+#10000
+1&
+#20000
+0&
+#30000
+1&
+#40000
+0&
+0(
+#50000
+b111 .
+b111 9
+b111 U
+05
+b1000 /
+b1000 8
+b1000 :
+b1000 V
+b11000 0
+b11000 ;
+b11000 S
+b11100 1
+b11100 <
+b11100 H
+b11100 T
+b0 6
+b0 G
+b0 O
+b0 2
+b0 F
+b0 L
+b0 3
+b0 I
+b0 K
+b100101 4
+b100101 J
+b100101 R
+b1 C
+1'
+1&
+#60000
+0&
+#70000
+b1 D
+b10 C
+0'
+1&
+#80000
+0&
+#90000
+b11 C
+b10 D
+1&
+#100000
+0&
+#110000
+b100 C
+b11 D
+1&
+#120000
+0&
+#130000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#140000
+0&
+#150000
+0+
+0,
+0-
+b11 C
+b10100 0
+b10100 ;
+b10100 S
+b11000 1
+b11000 <
+b11000 H
+b11000 T
+b110 .
+b110 9
+b110 U
+b111 /
+b111 8
+b111 :
+b111 V
+b10 D
+1&
+#160000
+0&
+#170000
+b100 C
+b11 D
+1&
+#180000
+0&
+#190000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#200000
+0&
+#210000
+0+
+0,
+0-
+b11 C
+b10 D
+b101 .
+b101 9
+b101 U
+b110 /
+b110 8
+b110 :
+b110 V
+b10000 0
+b10000 ;
+b10000 S
+b10100 1
+b10100 <
+b10100 H
+b10100 T
+1&
+#220000
+0&
+#230000
+b100 C
+b11 D
+1&
+#240000
+0&
+#250000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#260000
+0&
+#270000
+0+
+0,
+0-
+b11 C
+b1100 0
+b1100 ;
+b1100 S
+b10000 1
+b10000 <
+b10000 H
+b10000 T
+b100 .
+b100 9
+b100 U
+b101 /
+b101 8
+b101 :
+b101 V
+b10 D
+1&
+#280000
+0&
+#290000
+b100 C
+b11 D
+1&
+#300000
+0&
+#310000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#320000
+0&
+#330000
+0+
+0,
+0-
+b11 C
+b10 D
+b11 .
+b11 9
+b11 U
+b100 /
+b100 8
+b100 :
+b100 V
+b1000 0
+b1000 ;
+b1000 S
+b1100 1
+b1100 <
+b1100 H
+b1100 T
+1&
+#340000
+0&
+#350000
+b100 C
+b11 D
+1&
+#360000
+0&
+#370000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#380000
+0&
+#390000
+0+
+0,
+0-
+b11 C
+b100 0
+b100 ;
+b100 S
+b1000 1
+b1000 <
+b1000 H
+b1000 T
+b10 .
+b10 9
+b10 U
+b11 /
+b11 8
+b11 :
+b11 V
+b10 D
+1&
+#400000
+0&
+#410000
+b100 C
+b11 D
+1&
+#420000
+0&
+#430000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#440000
+0&
+#450000
+0+
+0,
+0-
+b11 C
+b10 D
+b1 .
+b1 9
+b1 U
+b10 /
+b10 8
+b10 :
+b10 V
+b10 6
+b10 G
+b10 O
+b10 2
+b10 F
+b10 L
+b10 3
+b10 I
+b10 K
+b0 0
+b0 ;
+b0 S
+b100 1
+b100 <
+b100 H
+b100 T
+1&
+#460000
+0&
+#470000
+b100 C
+b11 D
+1&
+#480000
+0&
+#490000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#500000
+0&
+#510000
+b10100 *
+b10100 E
+b10100 M
+0+
+0,
+0-
+b11 C
+b10 "
+b10 7
+b10 N
+b10 Q
+b11001 6
+b11001 G
+b11001 O
+b101 2
+b101 F
+b101 L
+b101 3
+b101 I
+b101 K
+b111100 0
+b111100 ;
+b111100 S
+b0 1
+b0 <
+b0 H
+b0 T
+b0 .
+b0 9
+b0 U
+b1 /
+b1 8
+b1 :
+b1 V
+b10 D
+1&
+#520000
+0&
+#530000
+b100 C
+b11 D
+1&
+#540000
+0&
+#550000
+1+
+1,
+1-
+b10 C
+b100 D
+1&
+#560000
+0&
+#570000
+0+
+0,
+0-
+b101 C
+b11111010 *
+b11111010 E
+b11111010 M
+b10 D
+b11111 .
+b11111 9
+b11111 U
+15
+b0 /
+b0 8
+b0 :
+b0 V
+bx 6
+bx G
+bx O
+b0xxxx 2
+b0xxxx F
+b0xxxx L
+bx 3
+bx I
+bx K
+b111000 0
+b111000 ;
+b111000 S
+b111100 1
+b111100 <
+b111100 H
+b111100 T
+b11001 "
+b11001 7
+b11001 N
+b11001 Q
+1&
+#580000
+0&
+#590000
+1!
+b101 D
+1&
+#600000
+0&
+#610000
+1&
+#620000
+0&
+#630000
+1&
+#640000
+0&
